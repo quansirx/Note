@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="GBK">
+
+<title>Page_Project</title>
+</head>
+<body>
+
+<h1>Hello</h1>
+
+
+<canvas id="c01" width="200" height="100"
+style="border:1px solid #000000;">
+</canvas>
+
+<script>
+var b01 = document.body;  
+var c01=document.getElementById("c01");
+var a01 = c01.getContext('2d');  
+document.body.clientWidth;  
+
+with(m=Math)C=cos,S=sin,P=pow,R=random;c01.width=c01.height=f=600;h=-250;
+function p(a01,b01,c01){if(c01>60)return[S(a01*7)*(13+5/(.2+P(b01*4,4)))-S(b01)*50,b01*f+50,625+C(a01*7)*(13+5/(.2+P(b01*4,4)))+b01*400,a01*1-b01/2,a01];
+A=a01*2-1;B=b01*2-1;
+if(A*A+B*B<1){if(c01>37){n=(j=c01&1)?6:4;o=.5/(a01+.01)+C(b01*125)*3-a01*300;w=b01*h;
+return[o*C(n)+w*S(n)+j*610-390,o*S(n)-w*C(n)+550-j*350,1180+C(B+A)*99-j*300,.4-a01*.1+P(1-B*B,-h*6)*.15-a01*b01*.4+C(a01+b01)/5+P(C((o*(a01+1)+(B>0?w:-w))/25),30)*.1*(1-B*B),o/1e3+.7-o*w*3e-6]}
+if(c01>32){c01=c01*1.16-.15;o=a01*45-20;w=b01*b01*h;z=o*S(c01)+w*C(c01)+620;
+return[o*C(c01)-w*S(c01),28+C(B*.5)*99-b01*b01*b01*60-z/2-h,z,(b01*b01*.3+P((1-(A*A)),7)*.15+.3)*b01,b01*.7]}o=A*(2-b01)*(80-c01*2);w=99-C(A)*120-C(b01)*(-h-c01*4.9)+C(P(1-b01,7))*50+c01*2;z=o*S(c01)+w*C(c01)+700;
+return[o*C(c01)-w*S(c01),B*99-C(P(b01, 7))*50-c01/3-z/1.35+450,z,(1-b01/1.2)*.9+a01*.1, P((1-b01),20)/4+.05]}}
+setInterval('for(i=0;i<1e4;i++)if(s=p(R(),R(),i%46/.74)){z=s[2];x=~~(s[0]*f/z-h);y=~~(s[1]*f/z-h);if(!m[q=y*f+x]|m[q]>z)m[q]=z,a01.fillStyle="rgb("+~(s[3]*h)+","+~(s[4]*h)+","+~(s[3]*s[3]*-80)+")",a01.fillRect(x,y,1,1)}',0)
+</script>
+
+<canvas id="c02" width="200" height="100"
+style="border:1px solid #000000;">
+<script>
+var b02 = document.body;  
+var c02=document.getElementById("c02");
+var a02 = c02.getContext('2d');  
+document.body.clientWidth;  
+
+with(m=Math)C=cos,S=sin,P=pow,R=random;c02.width=c02.height=f=600;h=-250;
+function p(a02,b02,c02){if(c02>60)return[S(a02*7)*(13+5/(.2+P(b02*4,4)))-S(b02)*50,b02*f+50,625+C(a02*7)*(13+5/(.2+P(b02*4,4)))+b02*400,a02*1-b02/2,a02];
+A=a02*2-1;B=b02*2-1;
+if(A*A+B*B<1){if(c02>37){n=(j=c02&1)?6:4;o=.5/(a02+.01)+C(b02*125)*3-a02*300;w=b02*h;
+return[o*C(n)+w*S(n)+j*610-390,o*S(n)-w*C(n)+550-j*350,1180+C(B+A)*99-j*300,.4-a02*.1+P(1-B*B,-h*6)*.15-a02*b02*.4+C(a02+b02)/5+P(C((o*(a02+1)+(B>0?w:-w))/25),30)*.1*(1-B*B),o/1e3+.7-o*w*3e-6]}
+if(c02>32){c02=c02*1.16-.15;o=a02*45-20;w=b02*b02*h;z=o*S(c02)+w*C(c02)+620;
+return[o*C(c02)-w*S(c02),28+C(B*.5)*99-b02*b02*b02*60-z/2-h,z,(b02*b02*.3+P((1-(A*A)),7)*.15+.3)*b02,b02*.7]}o=A*(2-b02)*(80-c02*2);w=99-C(A)*120-C(b02)*(-h-c02*4.9)+C(P(1-b02,7))*50+c02*2;z=o*S(c02)+w*C(c02)+700;
+return[o*C(c02)-w*S(c02),B*99-C(P(b02, 7))*50-c02/3-z/1.35+450,z,(1-b02/1.2)*.9+a02*.1, P((1-b02),20)/4+.05]}}
+setInterval('for(i=0;i<1e4;i++)if(s=p(R(),R(),i%46/.74)){z=s[2];x=~~(s[0]*f/z-h);y=~~(s[1]*f/z-h);if(!m[q=y*f+x]|m[q]>z)m[q]=z,a02.fillStyle="rgb("+~(s[5]*h)+","+~(s[4]*h)+","+~(s[3]*s[3]*-80)+")",a02.fillRect(x,y,1,1)}',0)
+</script>
+
+<canvas id="c003" width="200" height="100"
+style="border:1px solid #000000;">
+<script>
+var b03 = document.body;  
+var c03=document.getElementById("c03");
+var a03 = c03.getContext('2d');  
+document.body.clientWidth;  
+
+with(m=Math)C=cos,S=sin,P=pow,R=random;c03.width=c03.height=f=600;h=-250;
+function p(a03,b03,c03){if(c03>60)return[S(a03*7)*(13+5/(.2+P(b03*4,4)))-S(b03)*50,b03*f+50,625+C(a03*7)*(13+5/(.2+P(b03*4,4)))+b03*400,a03*1-b03/2,a03];
+A=a03*2-1;B=b03*2-1;
+if(A*A+B*B<1){if(c03>37){n=(j=c03&1)?6:4;o=.5/(a03+.01)+C(b03*125)*3-a03*300;w=b03*h;
+return[o*C(n)+w*S(n)+j*610-390,o*S(n)-w*C(n)+550-j*350,1180+C(B+A)*99-j*300,.4-a03*.1+P(1-B*B,-h*6)*.15-a03*b03*.4+C(a03+b03)/5+P(C((o*(a03+1)+(B>0?w:-w))/25),30)*.1*(1-B*B),o/1e3+.7-o*w*3e-6]}
+if(c03>32){c03=c03*1.16-.15;o=a03*45-20;w=b03*b03*h;z=o*S(c03)+w*C(c03)+620;
+return[o*C(c03)-w*S(c03),28+C(B*.5)*99-b03*b03*b03*60-z/2-h,z,(b03*b03*.3+P((1-(A*A)),7)*.15+.3)*b03,b03*.7]}o=A*(2-b03)*(80-c03*2);w=99-C(A)*120-C(b03)*(-h-c03*4.9)+C(P(1-b03,7))*50+c03*2;z=o*S(c03)+w*C(c03)+700;
+return[o*C(c03)-w*S(c03),B*99-C(P(b03, 7))*50-c03/3-z/1.35+450,z,(1-b03/1.2)*.9+a03*.1, P((1-b03),20)/4+.05]}}
+setInterval('for(i=0;i<1e4;i++)if(s=p(R(),R(),i%46/.74)){z=s[2];x=~~(s[0]*f/z-h);y=~~(s[1]*f/z-h);if(!m[q=y*f+x]|m[q]>z)m[q]=z,a03.fillStyle="rgb("+~(s[5]*h)+","+~(s[4]*h)+","+~(s[3]*s[3]*-80)+")",a02.fillRect(x,y,1,1)}',0)
+</script>
+
+
+<canvas id="myCanvas" width="500" height="300"
+style="border:1px solid #000000;">
+</canvas>
+
+</body>
+</html>
